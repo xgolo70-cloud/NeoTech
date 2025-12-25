@@ -25,12 +25,19 @@ function initLoadingScreen() {
     const loadingScreen = document.querySelector('.loading-screen');
     if (!loadingScreen) return;
 
-    window.addEventListener('load', () => {
-        setTimeout(() => {
-            loadingScreen.classList.add('hidden');
-            document.body.style.overflow = '';
-        }, 500);
-    });
+    // Hide loading screen as soon as DOM is ready
+    const hideLoader = () => {
+        loadingScreen.classList.add('hidden');
+        document.body.style.overflow = '';
+    };
+
+    // Hide on load or after max 1 second (fallback)
+    if (document.readyState === 'complete') {
+        hideLoader();
+    } else {
+        window.addEventListener('load', hideLoader);
+        setTimeout(hideLoader, 1000); // Fallback: max 1 second wait
+    }
 }
 
 // ========================================
