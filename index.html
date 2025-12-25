@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="نيُوتِك - روبوت منزلي ذكي بتقنية الذكاء الاصطناعي. مستقبل المساعدة المنزلية الآن بين يديك.">
+  <meta name="keywords" content="روبوت منزلي, ذكاء اصطناعي, تقنية, NeoTech, روبوت ذكي">
+  <title>نيُوتِك | NeoTech - الروبوت المنزلي الذكي</title>
+
+  <!-- Google Fonts: IBM Plex Sans Arabic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body>
+  <!-- Loading Screen -->
+  <div class="loading-screen">
+    <div class="loader">
+      <svg class="loader-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 4h4v16H4V4zm12 0h-4v16h4V4z" fill="currentColor" />
+      </svg>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="app">
+    <!-- Header -->
+    <header class="fixed-header">
+      <nav class="navbar">
+        <!-- Logo -->
+        <div class="logo">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-icon">
+            <path d="M4 4h4v16H4V4zm12 0h-4v16h4V4z" fill="currentColor" />
+          </svg>
+          <div>
+            <span class="logo-text">نيُوتِك</span>
+            <span class="logo-subtext">NeoTech</span>
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+          <li><a href="#hero" class="active">الرئيسية</a></li>
+          <li><a href="#utility">الاستخدامات</a></li>
+          <li><a href="#design">التصميم</a></li>
+          <li><a href="#intelligence">الذكاء</a></li>
+          <li><a href="#specs">المواصفات</a></li>
+        </ul>
+
+        <!-- CTA Button -->
+        <div class="cta-container">
+          <a href="#order" class="nav-cta">
+            <span>اطلب الآن</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="menu-toggle" aria-label="القائمة">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main id="hero" class="hero-section">
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>متاح للطلب المسبق</span>
+        </div>
+        <h1>نيُو<span class="hero-title-accent">تِك</span></h1>
+        <p class="subtitle">الجيل القادم من الروبوتات المنزلية الذكية</p>
+        <div class="hero-buttons">
+          <button class="btn-pill">
+            <span class="btn-text">اطلب مسبقاً</span>
+            <span class="btn-subtext">إيداع 200 دولار فقط</span>
+          </button>
+          <button class="btn-pill btn-secondary">
+            <span class="btn-text">شاهد العرض</span>
+            <span class="btn-subtext">فيديو تعريفي</span>
+          </button>
+        </div>
+      </div>
+      <div class="hero-robot-image">
+        <img src="/assets/hero-robot.png" alt="روبوت نيُوتِك المنزلي" />
+      </div>
+      <div class="hero-vignette"></div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator">
+        <span>اكتشف المزيد</span>
+        <div class="arrow"></div>
+      </div>
+    </main>
+
+    <!-- Utility Section -->
+    <section id="utility" class="content-section">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">الاستخدامات</span>
+        <h2>شريكك الذكي في المنزل</h2>
+        <p>صُمم نيُوتِك ليكون أكثر من مجرد روبوت - إنه مساعد ذكي يفهم احتياجاتك ويتكيف مع نمط حياتك اليومي.</p>
+      </div>
+      <div class="grid-cards">
+        <div class="card animate-on-scroll">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+          </div>
+          <h3>الترتيب والتنظيم</h3>
+          <p>يقوم نيُوتِك بترتيب الغرف وتنظيمها بدقة متناهية، من جمع الألعاب المبعثرة إلى ترتيب الكتب على الرفوف.</p>
+        </div>
+        <div class="card animate-on-scroll delay-1">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+              <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+              <line x1="6" y1="1" x2="6" y2="4" />
+              <line x1="10" y1="1" x2="10" y2="4" />
+              <line x1="14" y1="1" x2="14" y2="4" />
+            </svg>
+          </div>
+          <h3>المساعدة في المطبخ</h3>
+          <p>من تحضير قهوة الصباح إلى مساعدتك في إعداد الوجبات، نيُوتِك شريكك المثالي في المطبخ.</p>
+        </div>
+        <div class="card animate-on-scroll delay-2">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+              <line x1="9" y1="9" x2="9.01" y2="9" />
+              <line x1="15" y1="9" x2="15.01" y2="9" />
+            </svg>
+          </div>
+          <h3>رعاية أفراد الأسرة</h3>
+          <p>يراقب نيُوتِك كبار السن والأطفال بلطف، ويُنبهك فوراً عند الحاجة لتدخلك.</p>
+        </div>
+        <div class="card animate-on-scroll delay-3">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+              <line x1="3" y1="9" x2="21" y2="9" />
+              <line x1="9" y1="21" x2="9" y2="9" />
+            </svg>
+          </div>
+          <h3>إدارة المهام</h3>
+          <p>يتذكر مواعيدك ويُذكرك بها، ويساعدك في تنظيم يومك بكفاءة عالية.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design Section -->
+    <section id="design" class="content-section dark-bg">
+      <div class="split-layout">
+        <div class="text-block animate-on-scroll">
+          <span class="section-label">التصميم</span>
+          <h2>آمان بالتصميم، جمال بالتفاصيل</h2>
+          <p>صُمم نيُوتِك بعناية فائقة ليكون آمناً تماماً حول الأطفال والحيوانات الأليفة. تعتمد حركته على تقنية العضلات
+            الناعمة التي تستجيب بمرونة عند أي تلامس غير متوقع.</p>
+          <ul class="feature-list">
+            <li>عضلات ناعمة بتقنية حصرية</li>
+            <li>حساسات أمان متعددة المستويات</li>
+            <li>هيكل خفيف من ألياف الكربون</li>
+            <li>تصميم أنيق يناسب أي ديكور</li>
+          </ul>
+        </div>
+        <div class="visual-block animate-on-scroll delay-2">
+          <img src="/assets/design-visual.png" alt="تصميم نيُوتِك" class="design-image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Intelligence Section -->
+    <section id="intelligence" class="content-section">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">الذكاء الاصطناعي</span>
+        <h2>عقل يتعلم ويتطور معك</h2>
+        <p>يعمل نيُوتِك بأحدث تقنيات الذكاء الاصطناعي، يتعلم من عاداتك ويتطور باستمرار ليخدمك بشكل أفضل كل يوم.</p>
+      </div>
+      <div class="intelligence-grid">
+        <div class="intelligence-item animate-on-scroll">
+          <div class="intelligence-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+            </svg>
+          </div>
+          <h3>رؤية حاسوبية</h3>
+          <p>يرى ويفهم محيطه بدقة</p>
+        </div>
+        <div class="intelligence-item animate-on-scroll delay-1">
+          <div class="intelligence-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+            </svg>
+          </div>
+          <h3>فهم اللغة الطبيعية</h3>
+          <p>تحدث معه بالعربية بطلاقة</p>
+        </div>
+        <div class="intelligence-item animate-on-scroll delay-2">
+          <div class="intelligence-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+            </svg>
+          </div>
+          <h3>تعلم مستمر</h3>
+          <p>يتحسن كل يوم مع الاستخدام</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specs Section -->
+    <section id="specs" class="specs-section">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">المواصفات</span>
+        <h2>قوة مُصممة للمنزل</h2>
+      </div>
+      <div class="specs-grid">
+        <div class="spec-item">
+          <span class="spec-label">الارتفاع</span>
+          <span class="spec-value" data-count="167">167</span>
+          <span class="spec-unit">سنتيمتر</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">الوزن</span>
+          <span class="spec-value" data-count="30">30</span>
+          <span class="spec-unit">كيلوغرام</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">وقت التشغيل</span>
+          <span class="spec-value" data-count="4">4</span>
+          <span class="spec-unit">ساعات متواصلة</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">سرعة المشي</span>
+          <span class="spec-value" data-count="4">4</span>
+          <span class="spec-unit">كم/ساعة</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">قدرة الحمل</span>
+          <span class="spec-value" data-count="20">20</span>
+          <span class="spec-unit">كيلوغرام</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="footer-content">
+        <!-- Newsletter -->
+        <div class="footer-newsletter animate-on-scroll">
+          <h4>ابقَ على اطلاع</h4>
+          <p>اشترك في نشرتنا البريدية لتصلك أحدث الأخبار والعروض الحصرية.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="أدخل بريدك الإلكتروني" required>
+            <button type="submit">اشترك</button>
+          </form>
+        </div>
+
+        <!-- Footer Top -->
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 4h4v16H4V4zm12 0h-4v16h4V4z" fill="currentColor" />
+              </svg>
+              <span>نيُوتِك</span>
+            </div>
+            <p>نُعيد تعريف مستقبل المنزل الذكي مع أحدث تقنيات الروبوتات والذكاء الاصطناعي. رؤيتنا: روبوت في كل منزل.</p>
+            <div class="footer-social">
+              <a href="#" aria-label="تويتر">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                </svg>
+              </a>
+              <a href="#" aria-label="انستغرام">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+              <a href="#" aria-label="لينكد إن">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </a>
+              <a href="#" aria-label="يوتيوب">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+                  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-cols">
+            <div class="footer-col">
+              <h4>المنتجات</h4>
+              <a href="#">نيُو</a>
+              <a href="#">نيُو برو</a>
+              <a href="#">الملحقات</a>
+              <a href="#">قطع الغيار</a>
+            </div>
+            <div class="footer-col">
+              <h4>الشركة</h4>
+              <a href="#">من نحن</a>
+              <a href="#">الوظائف</a>
+              <a href="#">الأخبار</a>
+              <a href="#">المستثمرون</a>
+            </div>
+            <div class="footer-col">
+              <h4>الدعم</h4>
+              <a href="#">مركز المساعدة</a>
+              <a href="#">الأسئلة الشائعة</a>
+              <a href="#">تواصل معنا</a>
+              <a href="#">الضمان</a>
+            </div>
+            <div class="footer-col">
+              <h4>تواصل معنا</h4>
+              <a href="#">بغداد، العراق</a>
+              <a href="mailto:info@neotech.iq">info@neotech.iq</a>
+              <a href="tel:+9647700000000">+964 770 000 0000</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p>&copy; 2025 نيُوتِك. جميع الحقوق محفوظة.</p>
+          <div class="footer-legal">
+            <a href="#">سياسة الخصوصية</a>
+            <a href="#">شروط الاستخدام</a>
+            <a href="#">سياسة الكوكيز</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/9647700000000" class="whatsapp-float" target="_blank" title="تواصل عبر واتساب">
+      <svg viewBox="0 0 24 24" fill="white">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+      </svg>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" aria-label="العودة للأعلى">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M18 15l-6-6-6 6" />
+      </svg>
+    </button>
+
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
