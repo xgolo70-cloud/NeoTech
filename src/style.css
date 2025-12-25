@@ -338,54 +338,53 @@ body {
 
 /* Compact mode - header becomes centered floating pill */
 .fixed-header.compact {
-  top: 10px;
+  top: 12px;
   left: 50%;
   transform: translateX(-50%);
   width: auto;
-  max-width: 600px;
   padding: 0;
   border-radius: 100px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
 }
 
 .fixed-header.compact::before {
   opacity: 1;
-  background: rgba(10, 10, 10, 0.95);
+  background: rgba(15, 15, 15, 0.95);
   border-radius: 100px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .fixed-header.compact .navbar {
-  height: 50px;
-  padding: 0 24px;
-  gap: var(--space-md);
+  height: 48px;
+  padding: 0 20px;
+  gap: 20px;
+}
+
+.fixed-header.compact .logo {
+  gap: 8px;
 }
 
 .fixed-header.compact .logo-icon {
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
 }
 
 .fixed-header.compact .logo-text {
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .fixed-header.compact .logo-subtext {
   display: none;
 }
 
+/* Hide nav links in compact mode */
 .fixed-header.compact .nav-links {
-  gap: 4px;
-}
-
-.fixed-header.compact .nav-links a {
-  font-size: 0.8rem;
-  padding: 6px 10px;
+  display: none;
 }
 
 .fixed-header.compact .nav-cta {
-  padding: 6px 14px;
-  font-size: 0.8rem;
+  padding: 8px 18px;
+  font-size: 0.85rem;
 }
 
 /* Logo */
