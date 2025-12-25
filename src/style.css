@@ -325,7 +325,11 @@ body {
   height: var(--nav-height);
   max-width: 1400px;
   margin: 0 auto;
-  transition: height var(--transition-smooth);
+  transition: all 0.3s ease;
+}
+
+.navbar * {
+  transition: all 0.3s ease;
 }
 
 .fixed-header.scrolled .navbar {
@@ -337,26 +341,42 @@ body {
   padding: 0 var(--space-md);
 }
 
+.fixed-header.compact::before {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.95);
+}
+
 .fixed-header.compact .navbar {
-  height: 56px;
+  height: 50px;
 }
 
 .fixed-header.compact .logo-icon {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
+  transition: all 0.3s ease;
 }
 
 .fixed-header.compact .logo-text {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
 }
 
 .fixed-header.compact .logo-subtext {
   display: none;
 }
 
+.fixed-header.compact .nav-links {
+  gap: var(--space-sm);
+}
+
+.fixed-header.compact .nav-links a {
+  font-size: 0.85rem;
+  padding: 6px 12px;
+}
+
 .fixed-header.compact .nav-cta {
-  padding: 8px 20px;
-  font-size: 0.9rem;
+  padding: 6px 16px;
+  font-size: 0.85rem;
 }
 
 /* Logo */
