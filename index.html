@@ -36,7 +36,7 @@
     <header class="fixed-header">
       <nav class="navbar">
         <!-- Logo -->
-        <div class="logo">
+        <a href="#hero" class="logo">
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-icon">
             <path d="M4 4h4v16H4V4zm12 0h-4v16h4V4z" fill="currentColor" />
           </svg>
@@ -44,7 +44,7 @@
             <span class="logo-text">نيُوتِك</span>
             <span class="logo-subtext">NeoTech</span>
           </div>
-        </div>
+        </a>
 
         <!-- Navigation Links -->
         <ul class="nav-links">
@@ -263,14 +263,64 @@
     <!-- Footer -->
     <footer class="main-footer">
       <div class="footer-content">
-        <!-- Newsletter -->
-        <div class="footer-newsletter animate-on-scroll">
-          <h4>ابقَ على اطلاع</h4>
-          <p>اشترك في نشرتنا البريدية لتصلك أحدث الأخبار والعروض الحصرية.</p>
-          <form class="newsletter-form">
-            <input type="email" placeholder="أدخل بريدك الإلكتروني" required>
-            <button type="submit">اشترك</button>
-          </form>
+        <!-- Newsletter - Premium Design -->
+        <div class="newsletter-section animate-on-scroll">
+          <div class="newsletter-glow"></div>
+          <div class="newsletter-container">
+            <div class="newsletter-content">
+              <div class="newsletter-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path
+                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                </svg>
+                <div class="newsletter-icon-ring"></div>
+              </div>
+              <div class="newsletter-text">
+                <h3>ابقَ على اطلاع</h3>
+                <p>اشترك في نشرتنا البريدية لتصلك أحدث الأخبار والعروض الحصرية مباشرة إلى بريدك.</p>
+              </div>
+            </div>
+            <form class="newsletter-form" id="newsletterForm">
+              <div class="newsletter-input-wrapper">
+                <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M16 8v5a3 3 0 006 0v-1a10 10 0 10-3.92 7.94" />
+                </svg>
+                <input type="email" placeholder="أدخل بريدك الإلكتروني" required id="newsletterEmail">
+              </div>
+              <button type="submit" class="newsletter-btn">
+                <span class="btn-text">اشترك الآن</span>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+                <svg class="btn-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+              </button>
+            </form>
+            <div class="newsletter-features">
+              <div class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 12l2 2 4-4" />
+                  <circle cx="12" cy="12" r="10" />
+                </svg>
+                <span>بدون إزعاج</span>
+              </div>
+              <div class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17" />
+                </svg>
+                <span>إلغاء في أي وقت</span>
+              </div>
+              <div class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>تحديثات أسبوعية</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Footer Top -->

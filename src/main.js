@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initActiveNavLink();
     initParallaxEffect();
     initCardHoverEffects();
+    initNewsletterForm();
 });
 
 // ========================================
@@ -293,6 +294,32 @@ function initCardHoverEffects() {
             card.style.setProperty('--mouse-x', `${x}px`);
             card.style.setProperty('--mouse-y', `${y}px`);
         });
+    });
+}
+
+// ========================================
+// Newsletter Form
+// ========================================
+function initNewsletterForm() {
+    const form = document.getElementById('newsletterForm');
+    if (!form) return;
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const button = form.querySelector('.newsletter-btn');
+        const input = form.querySelector('input[type="email"]');
+
+        if (!button || !input) return;
+
+        // Show success state
+        button.classList.add('success');
+
+        // Reset after 3 seconds
+        setTimeout(() => {
+            button.classList.remove('success');
+            input.value = '';
+        }, 3000);
     });
 }
 
